@@ -8,6 +8,7 @@ alert ('Hello ' + userName + ' Thanks for visiting my site!');
 
 //Guessing Game here
 var game = prompt('Would you like to play a guessing game? Yes/No');
+console.log(game);
 if ((game === 'y') || (game === 'Y') || (game ==='Yes') || (game === 'yes') || (game = 'YES')){
   var answerOne = prompt('Let\'s start with an easy question. Where was I born?').toUpperCase();
   if (answerOne === myAnswerOne){
@@ -39,15 +40,21 @@ if ((game === 'y') || (game === 'Y') || (game ==='Yes') || (game === 'yes') || (
   }
   //using array
   var cities = ['NEW YORK', 'LONDON', 'PARIS', 'ROME', 'SEATTLE'];
-  var userResponseForCity =prompt('Name one of my favorite cities:').toUpperCase();
-  if (cities.indexOf(userResponseForCity)!== -1) {
-    alert('You got it! ' + userResponseForCity + ' is one of my favorite cities');
+  var counter = 1;
+
+
+   while (counter <  4)  {
+     var countDown = 4 - counter;
+     var userResponseForCity = prompt('Now you have ' + countDown + ' attempts to guess one of my favorite cities. Try number ' + counter).toUpperCase();
+     if (cities.indexOf(userResponseForCity)!== -1) {
+       alert('You got it! ' + userResponseForCity + ' is one of my favorite cities');
+       counter = 4;
+      } else {
+        alert('Not my favorite, sorry');
+        counter ++;
+        }
   }
-  else{
-    alert('Not my favorite.  Paris is everyone\'s safe bet :)');
+  alert('Nice playing with you!');
+} else {
+  alert('Nice meeting you! We\'ll paly next time!');
   }
-  alert('Game\'s over! :)');
-}
-else {
-  alert('Nice meeting you!');
-}

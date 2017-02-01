@@ -53,6 +53,7 @@ if ((game === 'y') || (game === 'Y') || (game ==='Yes') || (game === 'yes') || (
         alert('Not my favorite, sorry');
         counter ++;
         }
+        
   }
   alert('Nice playing with you!');
 } else {

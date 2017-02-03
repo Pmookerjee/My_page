@@ -3,12 +3,10 @@ var myAnswerTwo = 'KIA';
 var myAnswerThree = 'YES';
 var myAnswerFour = 'SAMMAMISH';
 
-var userName = prompt('What\'s your name?');
-alert ('Hello ' + userName + ' Thanks for visiting my site!');
-
 //Guessing Game here
 function guessingGame(){
   var score = 0;
+
   var answerOne = prompt('Let\'s start with an easy question. Where was I born?').toUpperCase();
   if (answerOne === myAnswerOne){
     alert('Correct! I was born in Russia');
@@ -17,6 +15,7 @@ function guessingGame(){
   else{
     alert('Ups!.. Wrong. I was born in Russia');
   }
+
   var answerTwo = prompt('What car do I drive?');
   if (answerTwo.toUpperCase() === myAnswerTwo){
     alert('Correct! I drive a Kia Sportage');
@@ -25,6 +24,7 @@ function guessingGame(){
   else{
     alert('Ups!.. Wrong. I drive a Kia Sportage');
   }
+
   var answerThree = prompt('Do I have children?');
   if (answerThree.toUpperCase() === myAnswerThree){
     alert('Correct! I have two kids');
@@ -33,6 +33,7 @@ function guessingGame(){
   else{
     alert('Ups!.. Wrong. I have two kids');
   }
+
   var answerFour = prompt('Where do I live now?');
   if (answerFour.toUpperCase() === myAnswerFour){
     alert('Correct! I live in Sammamish');
@@ -44,8 +45,6 @@ function guessingGame(){
   //using array
     var cities = ['NEW YORK', 'LONDON', 'PARIS', 'ROME', 'SEATTLE'];
     var counter = 1;
-
-
     while (counter <  4)  {
     var countDown = 4 - counter;
     var userResponseForCity = prompt('Now you have ' + countDown + ' attempts to guess one of my favorite cities. Try number ' + counter).toUpperCase();

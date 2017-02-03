@@ -10,18 +10,29 @@ h1{
   display: inline;
 }
 img {
-  height: 550px;
-  width: 425px;
+  width: 35%;
   background-color: beige;
+  padding: 5% 20%;
 }
 
 #containerOne{
-float:left;
-padding: 50px 10px 10px 100px;
+  width: 40%;
+  float:left;
+  padding: 5%;
 }
 
 #containerTwo{
-float:left;
-padding: 100px 10px 10px 100px;
-font-size: 1.5em;
+  width:40%;
+  float:right;
+  padding: 5%;
+  font-size: 1.5em;
 }
+/*button{
+
+  margin: 5% 0 0 15%;
+  padding: 2%;
+  width: 30%;
+  color: brown;
+  font-family: fantasy;
+  font-size: 1em;
+}*/
